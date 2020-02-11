@@ -30,7 +30,7 @@ management:
 spring:
   profiles: item1
   rabbitmq:
-    host: 192.168.71.13
+    address: 192.168.71.13
     port: 5672
     username: admin
     password: admin
@@ -41,7 +41,7 @@ server:
 spring:
   profiles: item2
   rabbitmq:
-    host: 192.168.71.13
+    address: 192.168.71.13
     port: 5672
     username: admin
     password: admin
