@@ -19,7 +19,8 @@ eureka:
 
 
 management:
-  security: true
+  security: 
+    enabled: false
   endpoints:
     web:
       exposure:
