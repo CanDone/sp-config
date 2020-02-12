@@ -31,7 +31,7 @@ management:
         
 ---
 spring:
-  profiles: item1
+#  profiles: item1
   rabbitmq:
     host: 192.168.71.13
     port: 5672
@@ -42,7 +42,7 @@ server:
   port: 8001
 ---
 spring:
-  profiles: item2
+#  profiles: item2
   rabbitmq:
     host: 192.168.71.13
     port: 5672
