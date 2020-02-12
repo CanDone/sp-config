@@ -21,10 +21,13 @@ eureka:
 management:
 #  security: 
 #    enabled: false
+  endpoint:
+    refresh:
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: bus-refresh
+        include: '*' #refresh   开启所有接口。包含用到的 /actuator/bus-refresh
         
 ---
 spring:
