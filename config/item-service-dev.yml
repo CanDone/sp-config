@@ -19,8 +19,8 @@ eureka:
 
 
 management:
-#  security: 
-#    enabled: false
+  security: 
+    enabled: false
   endpoint:
     refresh:
       enabled: true
