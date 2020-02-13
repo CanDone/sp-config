@@ -17,16 +17,16 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
 
-#management:
+management:
 #  security: 
 #    enabled: false
-#  endpoint:
-#    refresh:
-#      enabled: true
-#  endpoints:
-#    web:
-#      exposure:
-#        include: bus-refresh 
+  endpoint:
+    refresh:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
        
 ---
 spring:
