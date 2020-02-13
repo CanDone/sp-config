@@ -19,19 +19,19 @@ eureka:
 
 
 management:
-  security: 
-    enabled: false
+#  security: 
+#    enabled: false
 #  endpoint:
 #    refresh:
 #      enabled: true
   endpoints:
     web:
       exposure:
-        include: '*' #refresh   开启所有接口。包含用到的 /actuator/bus-refresh
+        include: bus-refresh 
         
 ---
 spring:
-#  profiles: item1
+  profile: item1
   rabbitmq:
     host: 192.168.71.13
     port: 5672
@@ -42,7 +42,7 @@ server:
   port: 8001
 ---
 spring:
-#  profiles: item2
+  profile: item2
   rabbitmq:
     host: 192.168.71.13
     port: 5672
